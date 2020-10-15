@@ -1,0 +1,16 @@
+##Symbolic regression
+
+You: what comes next 1,2,3,4,5,6
+BOT: 7
+You: what comes next 0.1,0.2,0.3,0.4,0.5,0.6,0.7
+BOT: 0.8
+
+## Sequence to sequence transformer network
+You: how are you doing
+BOT: Alright.
+You: hey
+BOT: Hi.
+You: guitar
+BOT: I thought we might be here for awhile. You know, things might get musical.
+You: get out
+BOT: Ahhhh.

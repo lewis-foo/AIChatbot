@@ -1,0 +1,240 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Greetings and Politeness -->
+
+    <category>
+        <pattern>HELLO *</pattern>
+        <template>
+            Hello!
+        </template>
+    </category>
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hey there!
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            Hi, how are you today?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+            Hey how are you <get name = "username"/>?
+        </template>
+    </category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>I'm brilliant, are you ready to do some studying</template>
+    </category>
+
+    <category>
+        <pattern>I AM FINE</pattern>
+        <template>Brilliant</template>
+    </category>
+
+    <category>
+        <pattern>BYE</pattern>
+        <template>#0$Bye! Nice talking to you <get name = "username"/>. You take care now.</template>
+    </category>
+
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>
+           #0$Bye
+        </template>
+    </category>
+
+    <category>
+        <pattern>EXIT</pattern>
+        <template>
+            #0$Bye
+        </template>
+    </category>
+
+    <category>
+        <pattern>THANKS</pattern>
+        <template>No problem <get name = "username"/>.</template>
+    </category>
+
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            <srai>No Problem <get name = "username"/>!</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHEERS</pattern>
+        <template>No Problem <get name = "username"/>!</template>
+    </category>
+   <category>
+      <pattern>I AM *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>
+   </category>
+       <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         Hello <set name = "username"> <star/>! </set>
+      </template>
+   </category>
+
+    <category>
+        <pattern>CHEERS *</pattern>
+        <template>No Problem <get name = "username"/>!</template>
+    </category>
+    <!-- Atom Questionnaire-->
+    <category>
+        <pattern>DO * CONTAIN *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DO * CONTAIN A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES A * CONTAIN A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+        <category>
+        <pattern>DOES A * CONTAIN *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES A * CONTAIN AN *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES AN * CONTAIN A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DO * HAVE *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DO * HAVE A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES A * HAVE A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+        <category>
+        <pattern>DOES AN * HAVE A *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+        <category>
+        <pattern>DOES AN * HAVE AN *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+        <category>
+        <pattern>DOES A * HAVE *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES AN * HAVE *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>DOES A * HAVE AN *</pattern>
+        <template>#2$contain$<star index="1"/>$<star index="2"/>
+        </template>
+    </category>
+    <category>
+        <pattern>I UNDERSTAND *</pattern>
+        <template>#2$like$<star index="1"/>
+        </template>
+    </category>
+    <category>
+        <pattern>I DO NOT UNDERSTAND *</pattern>
+        <template>#2$dislike$<star index="1"/>
+        </template>
+    </category>
+        <category>
+        <pattern>DO I UNDERSTAND *</pattern>
+        <template>#2$inquisition$<star index="1"/>
+        </template>
+    </category>
+    <!--- Wikipedia API -->
+    <category>
+        <pattern>WHAT IS A *</pattern>
+        <template>#1$
+            <star index="1"/>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS AN *</pattern>
+        <template>
+            <srai>WHAT IS A
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>
+            <srai>WHAT IS A
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>DEFINE *</pattern>
+        <template>
+            <srai>WHAT IS A
+                <star/>
+            </srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHO IS *</pattern>
+        <template>
+            <srai>WHAT IS A
+                <star/>
+            </srai>
+        </template>
+    </category>
+    <!-- Symbolic Regression -->
+    <category>
+        <pattern>WHAT COMES NEXT *</pattern>
+        <template>#5$
+            <star index="1"/>
+        </template>
+    </category>
+    <!-- Default reaction -->
+    <category>
+        <pattern>*</pattern>
+        <template>#99$
+            <star index="1"/>
+        </template>
+    </category>
+
+</aiml>
